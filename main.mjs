@@ -58,6 +58,7 @@ function runFighters(fighters, enemies) {
 	}
 }
 
+// test
 export function loop() {
 	var enemyFlag = getObjectsByPrototype(Flag).find((object) => !object.my);
 	var myFlag = getObjectsByPrototype(Flag).find((object) => object.my);
@@ -66,6 +67,7 @@ export function loop() {
 	var tower = getObjectsByPrototype(StructureTower).find((object) => object.my);
 	var container = getObjectsByPrototype(StructureContainer)[0];
 
+	// changed amount of bots @ each task for better win consistency
 	runDefenders(myCreeps.slice(0, 2), enemies, container, tower, myFlag);
 	runRunners(myCreeps.slice(2, 9), enemies, enemyFlag);
 	runFighters(myCreeps.slice(9), enemies);
