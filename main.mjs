@@ -1,5 +1,6 @@
 // Screeps Arena Bot Game
 // Final Submission
+// Objective- Capture the flag
 import { getObjectsByPrototype } from "game/utils";
 import {
 	Creep,
